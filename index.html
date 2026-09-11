@@ -1,15 +1,67 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="noindex, nofollow" />
-    <title>SWAY — Aperçu Bureau</title>
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-    <script type="module" crossorigin src="/sway-restaurants-preview/assets/index-DWkNJZPd.js"></script>
-    <link rel="stylesheet" crossorigin href="/sway-restaurants-preview/assets/index-BGe73GGi.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Sway — Tableau de bord restaurant</title>
+  <style>
+    :root{--bg:#f6f4ef;--panel:#fffefa;--ink:#171511;--muted:#746f66;--line:#e4ded3;--soft:#eee8dc;--accent:#222018;--good:#edf7ee;--warn:#fff4d8;--bad:#fff0eb;--shadow:0 22px 60px rgba(26,23,17,.08)}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;letter-spacing:0}button,input,select{font:inherit}button{border:0;cursor:pointer}.app{min-height:100vh;display:grid;grid-template-columns:276px 1fr}.sidebar{padding:26px 20px;border-right:1px solid var(--line);background:#fbfaf6;position:sticky;top:0;height:100vh}.brand{display:flex;align-items:center;justify-content:space-between;margin-bottom:26px}.logo{font-size:30px;font-weight:760;letter-spacing:-.03em}.logo span{display:inline-block;transform:skewX(-10deg);font-style:italic}.collapse{width:34px;height:34px;border-radius:9px;background:var(--soft);color:var(--muted)}.nav{display:grid;gap:6px}.nav button{display:flex;align-items:center;gap:10px;width:100%;padding:12px;border-radius:10px;background:transparent;color:var(--muted);text-align:left}.nav button.active,.nav button:hover{background:var(--ink);color:#fff}.dot{width:8px;height:8px;border-radius:99px;background:currentColor}.side-note{position:absolute;left:20px;right:20px;bottom:22px;padding:14px;border-radius:14px;background:var(--soft);color:var(--muted);font-size:13px;line-height:1.45}.main{padding:24px clamp(18px,3vw,42px) 42px}.topbar{display:flex;gap:16px;align-items:center;justify-content:space-between;margin-bottom:28px}.title h1{font-size:38px;line-height:1.05;margin:0 0 8px;font-weight:760;letter-spacing:-.025em}.title p{margin:0;color:var(--muted)}.actions{display:flex;gap:10px;align-items:center}.ghost,.primary{height:42px;padding:0 16px;border-radius:11px}.ghost{background:var(--panel);border:1px solid var(--line);color:var(--ink)}.primary{background:var(--ink);color:#fff}.grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(320px,.65fr);gap:18px}.panel{background:var(--panel);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}.panel-head{padding:20px 20px 0;display:flex;align-items:flex-start;justify-content:space-between;gap:14px}.panel h2{margin:0;font-size:18px;letter-spacing:-.01em}.panel small,.helper{color:var(--muted)}.priority-list{padding:18px 20px 20px;display:grid;gap:12px}.priority{display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;padding:14px;border:1px solid var(--line);border-radius:14px;background:#fff}.badge{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;font-weight:760}.badge.warn{background:var(--warn)}.badge.bad{background:var(--bad)}.badge.good{background:var(--good)}.priority strong{display:block;margin-bottom:3px}.priority span{color:var(--muted);font-size:14px}.mini{padding:9px 12px;border-radius:10px;background:var(--soft);color:var(--ink)}.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:18px 20px 20px}.kpi{padding:16px;border:1px solid var(--line);border-radius:14px;background:#fff;min-height:126px}.kpi .value{font-size:28px;font-weight:760;margin:18px 0 6px}.empty{color:var(--muted);font-size:14px;line-height:1.4}.quick{padding:18px 20px 20px;display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.quick button{min-height:84px;border-radius:14px;background:#fff;border:1px solid var(--line);text-align:left;padding:14px;color:var(--ink)}.quick strong{display:block;margin-bottom:6px}.quick span{color:var(--muted);font-size:13px}.right{display:grid;gap:18px}.service{padding:18px 20px 20px}.service-row{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);padding:13px 0}.service-row:last-child{border-bottom:0}.state{padding:7px 10px;border-radius:99px;background:var(--soft);font-size:13px}.timeline{padding:18px 20px 22px;display:grid;gap:13px}.step{display:grid;grid-template-columns:26px 1fr;gap:10px;align-items:start}.num{width:26px;height:26px;border-radius:99px;background:var(--ink);color:white;display:grid;place-items:center;font-size:12px}.step p{margin:0;color:var(--muted);font-size:14px}.step strong{display:block;margin-bottom:3px}.toast{position:fixed;right:22px;bottom:22px;background:var(--ink);color:white;padding:13px 16px;border-radius:12px;box-shadow:var(--shadow);opacity:0;transform:translateY(10px);transition:.2s}.toast.show{opacity:1;transform:none}.menu{display:none}.collapsed .app{grid-template-columns:86px 1fr}.collapsed .sidebar{padding-inline:14px}.collapsed .logo{font-size:0}.collapsed .logo:before{content:"s";font-size:28px}.collapsed .nav button span,.collapsed .side-note,.collapsed .collapse{display:none}.collapsed .nav button{justify-content:center}
+    @media(max-width:900px){.app{display:block}.sidebar{display:none;position:fixed;z-index:3;inset:0 auto 0 0;width:280px}.sidebar.open{display:block}.menu{display:inline-grid;place-items:center}.topbar{align-items:flex-start}.grid{grid-template-columns:1fr}.kpis,.quick{grid-template-columns:1fr}.actions{flex-wrap:wrap}.title h1{font-size:32px}}
+  </style>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand"><div class="logo">s<span>w</span>ay</div><button class="collapse" id="collapse">‹</button></div>
+      <nav class="nav" aria-label="Navigation principale">
+        <button class="active"><i class="dot"></i><span>Accueil</span></button><button><i class="dot"></i><span>Stock</span></button><button><i class="dot"></i><span>Inventaires</span></button><button><i class="dot"></i><span>Commandes</span></button><button><i class="dot"></i><span>Réceptions</span></button><button><i class="dot"></i><span>Ventes</span></button><button><i class="dot"></i><span>Analyses</span></button><button><i class="dot"></i><span>Réglages</span></button>
+      </nav>
+      <div class="side-note">Aperçu non officiel. Les données affichées ici sont des états de maquette, pas des chiffres réels.</div>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <button class="ghost menu" id="menu">Menu</button>
+        <div class="title"><h1>Bonjour</h1><p>Les tâches importantes du restaurant, visibles dès l’ouverture.</p></div>
+        <div class="actions"><button class="ghost">Exporter</button><button class="primary" data-toast="Priorités ouvertes">Traiter les priorités</button></div>
+      </header>
+      <section class="grid">
+        <div>
+          <section class="panel">
+            <div class="panel-head"><div><h2>Priorités du jour</h2><small>Ce qui demande une action avant le prochain service.</small></div><button class="mini">Voir tout</button></div>
+            <div class="priority-list">
+              <article class="priority"><div class="badge bad">3</div><div><strong>Stocks sous seuil</strong><span>Produits à vérifier avant de passer commande.</span></div><button class="mini" data-toast="Stock ouvert">Ouvrir</button></article>
+              <article class="priority"><div class="badge warn">2</div><div><strong>Réceptions à vérifier</strong><span>Contrôler les livraisons pour éviter la double comptabilisation.</span></div><button class="mini" data-toast="Réceptions ouvertes">Vérifier</button></article>
+              <article class="priority"><div class="badge good">1</div><div><strong>Inventaire en cours</strong><span>Reprendre là où l’équipe s’est arrêtée.</span></div><button class="mini" data-toast="Inventaire repris">Reprendre</button></article>
+            </div>
+          </section>
+          <section class="panel" style="margin-top:18px">
+            <div class="panel-head"><div><h2>Performance</h2><small>Les comparaisons apparaîtront quand les ventes seront reliées.</small></div></div>
+            <div class="kpis">
+              <div class="kpi"><small>Ventes déclarées</small><div class="value">—</div><div class="empty">Aucune donnée connectée sur cet aperçu.</div></div>
+              <div class="kpi"><small>Écart stock</small><div class="value">—</div><div class="empty">À calculer après inventaire réel.</div></div>
+              <div class="kpi"><small>Semaine précédente</small><div class="value">—</div><div class="empty">Comparaison désactivée sans historique.</div></div>
+            </div>
+          </section>
+          <section class="panel" style="margin-top:18px">
+            <div class="panel-head"><div><h2>Actions rapides</h2><small>Les gestes fréquents, sans chercher dans les menus.</small></div></div>
+            <div class="quick"><button data-toast="Sortie créée"><strong>Déclarer une sortie</strong><span>Retirer un produit utilisé ou perdu.</span></button><button data-toast="Commande préparée"><strong>Passer une commande</strong><span>Partir des seuils et fournisseurs.</span></button><button data-toast="Inventaire lancé"><strong>Faire un inventaire</strong><span>Compter une zone ou toute la réserve.</span></button><button data-toast="Réception enregistrée"><strong>Enregistrer une réception</strong><span>Valider ce qui a vraiment été livré.</span></button></div>
+          </section>
+        </div>
+        <aside class="right">
+          <section class="panel service"><div class="panel-head" style="padding:0 0 8px"><div><h2>Service</h2><small>Vue simple pour décider vite.</small></div></div><div class="service-row"><span>Ouverture</span><span class="state">À préparer</span></div><div class="service-row"><span>Commandes</span><span class="state">À contrôler</span></div><div class="service-row"><span>Réserve</span><span class="state">Inventaire partiel</span></div><div class="service-row"><span>Équipe</span><span class="state">Actions visibles</span></div></section>
+          <section class="panel"><div class="panel-head"><div><h2>Parcours conseillé</h2><small>Un ordre clair pour réduire les clics.</small></div></div><div class="timeline"><div class="step"><div class="num">1</div><p><strong>Regarder les priorités</strong>Commencer par ce qui bloque le service.</p></div><div class="step"><div class="num">2</div><p><strong>Valider les réceptions</strong>Mettre le stock à jour uniquement après contrôle.</p></div><div class="step"><div class="num">3</div><p><strong>Commander si nécessaire</strong>Passer commande avec les seuils comme aide, pas comme pilote automatique.</p></div></div></section>
+        </aside>
+      </section>
+    </main>
+  </div>
+  <div class="toast" id="toast"></div>
+  <script>
+    const body=document.body,sidebar=document.getElementById('sidebar'),toast=document.getElementById('toast');
+    document.getElementById('collapse').onclick=()=>body.classList.toggle('collapsed');
+    document.getElementById('menu').onclick=()=>sidebar.classList.toggle('open');
+    document.querySelectorAll('[data-toast]').forEach(btn=>btn.onclick=()=>{toast.textContent=btn.dataset.toast;toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),1600)});
+  </script>
+</body>
 </html>
