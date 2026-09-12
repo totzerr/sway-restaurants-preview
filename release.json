@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "commit": "39614aaf9af10bdd15ffe77ed55fecf81eaa9f4d",
+  "commit": "7943336170ddac279e7eaa2161e8e06e5fe15989",
   "files": {
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "assets/account-panel-BAJ8w7fT.js": "5b5f6710e6120f595357c3192e3f3c69d1433fd49ea52368a3f0990a25166c1d",
@@ -10,7 +10,7 @@
     "brand/sway-logo.png": "7d514d673d33b477403d365d216e02dc7b26a31fc34b3f696453d922883994be",
     "favicon.svg": "bcef2dccfbe5747e5656175c198d334b88600815c168afe7c3401540d466d532",
     "fonts/Plus-Jakarta-Sans-LICENSE.txt": "995c7199cab65954f545996326755daee7b63cc6b42b06c13da1f9502ab08a99",
-    "index.html": "7b13e31e3d201251c1da612bd04cbc1d7febb20430df2107b067fac40f8c530f",
-    "source-version.txt": "4d40a6eed3d879012d814bab643222fede85936a851f5482c4f0c7340fa76f22"
+    "index.html": "e23f30ea70546da34a29e3beb41e8b58f28810802c893eceab0573a559cdae90",
+    "source-version.txt": "2f45551588cf59e611db2f566479a6d4d9aca5dfe09a7f8500679648ecb73bb6"
   }
 }
